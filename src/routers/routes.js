@@ -1,6 +1,6 @@
 import express from 'express';
 import {userRegister,logUser,allUser} from '../controller/userController.js';
-const MessagingResponse = require('twilio').twiml.MessagingResponse;
+// const MessagingResponse = require('twilio').twiml.MessagingResponse;
 
 const router = express.Router();
 

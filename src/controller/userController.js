@@ -18,8 +18,8 @@ const userRegister = async (req, res) => {
                 status: 400,
                 message: "User Registration Failed!!",
             });
-            console.log(password);
-            console.log(findUser.password);
+            // console.log(password);
+            // console.log(findUser.password);
         } else {
             // sgMail()
             res.status(200).send({
