@@ -1,7 +1,7 @@
 import { UserRegirster } from "../../models";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
-import {sendSms} from '../service/otp.js';
+// import {sendSms} from '../service/otp.js';
 const userRegister = async (req, res) => {
     try {
         const { firstName, lastName, email, password } = req.body;
@@ -61,10 +61,10 @@ const logUser = async (req, res) => {
                     email: findUser.email,
                     password: findUser.password,
                 };
-                const phone = +917285069535;
-                const message = "welcomeMessage"
+                // const phone = +917285069535;
+                // const message = "welcomeMessage"
                 const token = jwt.sign(payload, "secret key");
-                sendSms(phone, message);
+                // sendSms(phone, message);
                 // console.log(sendOtp);
                 res.status(200).send({
                     status: 200,
